@@ -1,0 +1,7 @@
+services:
+  smartdns:
+    image: ecat/smartdns
+    volumes:
+      - ./data:/app/smartdns.conf.d
+    ports:
+      - "25353:53/udp"
